@@ -80,9 +80,22 @@ a{
 }
 
 .container{
-    max-width: 1200px;
+    max-width: 100%;
     margin: auto;
-    padding: 5rem 2rem;
+    position: relative;
+
+}
+.slideshow-container {
+    position: relative;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+}
 }
 
 .header{
