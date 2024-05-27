@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 
-.img{
+img{
     width: 100%;
     display: flex;
 }
@@ -17,12 +17,12 @@ a{
     text-decoration: none;
 }
 
-.body{
+body{
     font-family: 'Poppins', sans-serif;
     background-color: #111111;
 }
 
-.nav{
+nav{
     max-width: 1200px;
     margin: auto;
     padding: 2rem 1rem;
@@ -61,6 +61,15 @@ a{
     transition: all 0.3s ease;
 }
 
+.slideshow-container {
+    width: 100%; /* Растягиваем контейнер на всю ширину экрана */
+}
+
+.mySlides img {
+    width: 100%; /* Растягиваем изображения на всю ширину контейнера */
+}
+
+
 .link a:hover::after{
     width: 70%;
 }
@@ -84,9 +93,8 @@ a{
     margin: auto;
     padding: 5rem 2rem;
 }
-    
-    
-.header{
+
+header{
     position: relative;
     padding-top: 2rem;
     display: grid;
@@ -95,14 +103,14 @@ a{
     gap: 2rem;
 }
 
-.header .content h4{
+header .content h4{
     margin-bottom: 1rem;
     color: #ccc;
     font-size: 1rem;
     font-weight: 600;
 }
 
-.header .content h1{
+header .content h1{
     color: #fff;
     margin-bottom: 1rem;
     font-size: 3rem;
@@ -110,21 +118,21 @@ a{
     line-height: 4rem;
 }
 
-.header .content h1 span{
+header .content h1 span{
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #fff;
 }
 
-.header .content p{
+header .content p{
     margin-bottom: 2rem;
     color: #ccc;
 }
 
-.header .image{
+header .image{
     position: relative;
 }
 
-.header .image::before{
+header .image::before{
     position: absolute;
     top: 0;
     left: 50%;
@@ -137,12 +145,12 @@ a{
     z-index: -100;
 }
 
-.header .image img{
+header .image img{
     max-width: 600px;
     margin: auto;
 }
 
-.section .header{
+section .header{
     margin-bottom: 1rem;
     color: #fff;
     text-align: center;
@@ -272,28 +280,28 @@ a{
     border-color: #1e40af;
 }
 
-.footer{
+footer{
     position: relative;
     display: grid;
     grid-template-columns: 400px repeat(3, 1fr);
     gap: 2rem;
 }
 
-.footer .column .logo{
+footer .column .logo{
     max-width: 100px;
     margin-bottom: 2rem;
 }
 
-.footer .column p{
+footer .column p{
     color: #ccc;
     margin-bottom: 2rem;
 }
 
-.footer .column .socials{
+footer .column .socials{
     gap: 1rem;
 }
 
-.footer .column .socials a{
+footer .column .socials a{
     color: #ccc;
     border: 1px solid #ccc;
     padding: 5px 10px;
@@ -302,27 +310,27 @@ a{
     transition: all 0.3s ease;
 }
 
-.footer .column .socials a:hover{
+footer .column .socials a:hover{
     color: #fff;
     background-color: #1d4ed8;
     border-color: #1d4ed8;
 }
 
-.footer .column h4{
+footer .column h4{
     color: #fff;
     margin-bottom: 2rem;
     font-size: 1.2rem;
     font-weight: 500;
 }
 
-.footer .column > a{
+footer .column > a{
     display: block;
     color: #ccc;
     margin-bottom: 1rem;
     transition: all 0.3s ease;
 }
 
-.footer .column > a:hover{
+footer .column > a:hover{
     color: #1d4ed8;
 }
 
@@ -339,10 +347,10 @@ a{
     .nav-links{
         display: none;
     }
-    .header{
+    header{
         grid-template-columns: repeat(1, 1fr);
     }
-    .header .image{
+    header .image{
         grid-area: 1/1/2/2;
     }
     .features{
@@ -351,13 +359,13 @@ a{
     .pricing{
         grid-template-columns: repeat(2, 1fr);
     }
-    .footer{
+    footer{
         grid-template-columns: 1fr 200px;
     }
 }
 
 @media (width < 600px){
-    .header .image::before{
+    header .image::before{
         display: none;
     }
 
@@ -369,7 +377,7 @@ a{
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .footer{
+    footer{
         grid-template-columns: 1fr 150px;
     }
 }
